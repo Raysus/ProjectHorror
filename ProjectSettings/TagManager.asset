@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Phantom
+  - Spectre
+  - Balaam
   layers:
   - Default
   - TransparentFX
@@ -13,9 +16,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Player
+  - Forground
   - 
   - 
   - 
@@ -40,4 +43,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 665532655
+    locked: 0
+  - name: Player
+    uniqueID: 3224178615
+    locked: 0
+  - name: Forground
+    uniqueID: 1157243527
     locked: 0
