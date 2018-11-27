@@ -24,6 +24,14 @@ public class PlayerController : MonoBehaviour {
 		{
 			transform.position += Vector3.right * speed;
 		}
+		if(Input.GetMouseButtonDown(0))
+		{
+			//Interactua con objetos
+		}
+		if(Input.GetMouseButtonDown(1))
+		{
+			//algo
+		}
 	}
 
 }
