@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+	public GameScript gs;
+
 	public float speed;
 	// Use this for initialization
 	void Start () {
-		
+		gs = GameObject.Find("GameManager").GetComponent<GameScript>();
 	}
 	
 	void FixedUpdate() {
@@ -32,6 +34,15 @@ public class PlayerController : MonoBehaviour {
 		{
 			//algo
 		}
+	}
+
+	public void OnTriggerEnter2D(Collider2D col)
+	{
+		gs.restarSanidad();
+	}
+	public void OnCollisionStay(Collision other)
+	{
+		
 	}
 
 }
