@@ -16,6 +16,7 @@ public class GameScript : MonoBehaviour {
 	public Image sanityCritical;
 	public Image noSanity;
 	// Use this for initialization
+	public GameObject enemigo;
 	void Start () {
 		sanity = 100;
 		time = 60;
@@ -25,4 +26,21 @@ public class GameScript : MonoBehaviour {
 	void Update () {
 
 	}
+
+	void restarSanidad (String ene){
+		if(ene == "Balaam")
+		{
+			this.sanity-=30;
+		}
+		if(ene == "Phantom")
+		{
+			this.sanity-=10;
+		}
+		if(ene == "Spectre")
+		{
+			this.sanity-=5;
+		}
+		
+	} 
+	
 }
